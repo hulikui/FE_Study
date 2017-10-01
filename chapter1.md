@@ -3,12 +3,14 @@
 1. 盒子模型 （content+padding+border+margin）
    1. W3C  content 不包括其他部分
    2. IE  content 包括 padding + border
-      1. ```
+       
+      ```
          box-sizing
              content-box: width = content
              border-box: content+padding+border = width
          ```
    3. margin 塌陷
+   
       ```
       <div class="parent">
           <div class="child"></div>
@@ -38,7 +40,7 @@
    5. marigin 上下合并
       1. 合并触发情形
 
-         1. ```
+          ```
             1. 水平margin不会合并。
             2. 两个上下渲染相邻（不一定是兄弟节点）的块状元素在正常页面流情况下会发生 margin 合并。
             3. 浮动元素不会和任何元素（包括子孙节点）发生 margin 合并。
@@ -63,7 +65,7 @@
    7. BFC（块级格式上下文）
       1. 概念：一个接一个的垂直排列，水平方向撑满整个宽度的一种布局
       2. 如何创建
-         1. ```
+          ```
             float不为none
             overflow不为visible
             position为absolute或者fixed
@@ -107,7 +109,7 @@
 
    1. 圣杯布局
 
-      1. ```
+       ```
          <style>
              .left,
              .middle,
@@ -151,9 +153,9 @@
          </div>
          ```
 
-      2. 双飞翼布局
+  2. 双飞翼布局
 
-         1. ```
+          ```
             <style>
                 .main,
                 .sub,
@@ -189,13 +191,13 @@
             </div>
             ```
 
-         2. 由BFC启发的布局 侧面布局优先加载
+ 2. 由BFC启发的布局 侧面布局优先加载
 
             1. 参考BFC讲解-两栏布局
 
             2. 三栏布局中间自适应
 
-               1. ```
+                ```
                   <style>
                       .left,
                       .main,
@@ -225,6 +227,24 @@
                       <h4>main</h4>
                   </div>
                   ```
+3.    绝对居中的几种方法
+4.    CSS属性重要区别
+    1.    position
+        1.    relative 相对于自身的原来的正常位置
+        2.    absolute 相对于第一个非static的父级元素
+            ```
+                1.使得inline元素被块状化
+                2.层级元素后来者居上
+                3.会使float失效
+            ```
+    2.    rem、em、px
+        1.    rem 相对于html根元素的font-size
+        2.    em  相对于父级元素的font-sze
+        3.    px 绝对大小 16px rem em相对大小
+                  
+                  
+                  
+
 
 
 
