@@ -267,7 +267,6 @@
              </div>
          </div>
          ```
-
       2. css2解决办法
 
          1. ```
@@ -352,6 +351,10 @@
       /* 这个相邻选择器由标签选择器与属性选择器组成，属性选择器为10 */
       ul ol li.red {} /* a=0 b=0 c=1 d=3 -> specificity = 0,0,1,3 */
       ```
+
+   5. display: none 、visibility: hidden、 opacity:0
+
+      1. 前者不渲染 后两者浏览器渲染
 
 
 
