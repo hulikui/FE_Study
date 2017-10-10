@@ -12,6 +12,8 @@
   * require.js
   * [函数节流和函数去抖](javascript/han-shu-jie-liu-he-han-shu-qu-dou.md)
   * [get参数获取&JSONP](javascript/deepcopy.md)
+  * [轮播图](javascript/lun-bo-tu.md)
+  * [设计模式](javascript/she-ji-mo-shi.md)
 * [4.安全](4an-quan.md)
 * [5.框架](5kuang-jia.md)
 

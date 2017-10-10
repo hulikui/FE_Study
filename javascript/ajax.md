@@ -6,7 +6,6 @@ $.ajax = function(options) {
     if(!options || typeof options != 'object') {
         return false;
     }
-}
 
 // 请求类型
 var type = options.type || 'get';
@@ -53,6 +52,7 @@ xhr.onreadystatechange = function() {
     } else if (xhr.readyState === 4) {
         options.error && options.error('request error.');
     }
+}
 }
 ```
 

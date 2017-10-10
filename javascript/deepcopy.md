@@ -28,7 +28,7 @@ JSONP
         var data = options.data || {};
         var callback = options.callback;
         var fnName = "JSONP" + id++;
-        
+
         data["callback"] = fnName;
         var params = [];
         for (var key in data) {

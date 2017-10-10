@@ -4,7 +4,7 @@
    1. W3C  content 不包括其他部分  
    2. IE  content 包括 padding + border
 
-   ```
+   ```css
          box-sizing
              content-box: width = content
              border-box: content+padding+border = width
@@ -12,7 +12,7 @@
 
    1. margin 塌陷
 
-      ```
+      ```css
       <div class="parent">
           <div class="child"></div>
       </div>
@@ -85,7 +85,7 @@
 
          3. 创建自适应两栏布局
 
-            1. ```
+            1. ```css
                <style>
                    body {
                        width: 300px;
@@ -115,7 +115,7 @@
 
    1. 圣杯布局
 
-      ```
+      ```css
          <style>
              .left,
              .middle,
@@ -136,6 +136,9 @@
              .right {
                  margin-right: -100%;
                  width: 220px；
+             }
+             .middle {
+                 width: 100%;
              }
              //
              .right {
@@ -161,7 +164,7 @@
 
    2. 双飞翼布局
 
-      ```
+      ```css
             <style>
                 .main,
                 .sub,
