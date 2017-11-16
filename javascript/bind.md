@@ -1,12 +1,12 @@
 bind
 
 ```js
-Function.prototype.bind = function(context) {
+Function.prototype.bind = function(callback, context) {
     var args = Array.prototype.slice.call(arguments, 1);
     var that = this;
     return function() {
         var arg = [].concat(args).concat(Array.prototype.slice.call(arguments, 0));
-        return that.apply(context, arg);
+        return callback.apply(that, arg);
     }
 }
 ```

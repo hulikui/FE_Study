@@ -30,7 +30,7 @@ var debounce = function(fn, delay){
 }
 ```
 
-once 
+once
 
 ```js
 var once = function(callback, context){
