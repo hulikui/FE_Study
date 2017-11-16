@@ -1,12 +1,8 @@
-**JavaScript**
+[**JavaScript（基础部分）**](/javascript/ji-chu.md)
 
-3.1 基本语法
 
-1. ES5
-2. ES6
-3. 正则表达式
 
-3.2 基本函数构造
+基本函数构造（进阶）
 
 1. [封装 ajax 请求](/javascript/ajax.md)
 2. [实现 bind 函数](/javascript/bind.md)
