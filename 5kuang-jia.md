@@ -1,9 +1,13 @@
-1. 框架MVC 和 MVVM的区别
+1. \(了解会使用加分\) 现在流程的三大框架
+   ```js
+   Angular.js
+   Vue.js
+   React.js
+   ```
 2. angular框架  
    1. 脏检查机制  
-   
 
-   ```
+```
    1. 将原对象赋值一份快照。在某个时间事件触发遍历比较当前对象和快照，如果不一样就执行某些操作
    2. 流程
          1，绑定ng事件的DOM 创建一个watcher对象
@@ -18,15 +22,14 @@
         http请求
         $timeout,$interval
         手动调用$apply(), $digest()
+```
 
-   ```
-
-3. [react框架](https://github.com/bailicangdu/react-pxq)  
+1. [react框架](https://github.com/bailicangdu/react-pxq)  
    1. diff算法  
       ![](https://segmentfault.com/img/bVuH57)  
    2. redux  
       1. ![](https://github.com/bailicangdu/pxq/raw/master/src/images/all_redux.png)  
-      2.
+         2.
 
 
 

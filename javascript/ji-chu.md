@@ -1,10 +1,30 @@
-1. JavaScript 基本数据和引用类型
+1. JavaScript 是 单线程还是多线程？
+   ```js
+   JS 是单线程的（这个搞不清楚就可以fail掉了）
+   延伸下：为什么浏览器JS要设置为单线程 而不是其他 多线程 的
+       无非是初期浏览器性能问题，单线程尽可能的快而不过多占用系统资源
+    
+   JS 是 异步非阻塞的，解释下这个概念
+       1，JS代码是顺序执行，但是遇到一些异步事件（比如网络请求，I/O，setTimeout函数、Node.js的数据库操作等等）会把这些事件放入一个事件队列，然后尽快执行其后面的代码；
+       2，直到JS代码执行完毕后，开始处理事件队里里的异步事件，每个异步事件执行成功后再去执行回调（通知CPU或者主函数执行完毕继续执行下一步代码）
+       3，这样直到所有代码执行完毕的过程（尽可能的让CPU和硬件利用起来）
+       console.log(1);
+       setTimeout(function(){
+           console.log(2);
+       }, 0);
+       for (var i = 0; i < 100; i++);
+       console.log(3);
+       //正确输出结果是： 1 3 2 
+   JS的优缺点：
+       擅长异步I/O，但是不擅长大量计算       
+   ```
+2. JavaScript 基本数据和引用类型
    ```js
    1. js基本数据类型:
    Number、String 、Boolean、Null和 undefined
    2. 基本引用类型: Object 、Array 、Function 、Date和（ES6的RegExp(正则)）
    ```
-2. null  和 undifined 的区别
+3. null  和 undifined 的区别
 
    ```js
    null是一个表示"无"的[对象],转为数值时为0 即(Number(null) == 0);
@@ -13,7 +33,7 @@
    null 用来表示尚未存在的对象,常用来表示函数企图返回一个不存在的对象。
    ```
 
-3. == \(双等于\) 和 === \(全等于\) 的区别
+4. == \(双等于\) 和 === \(全等于\) 的区别
 
    ```js
    双等于比较的时候会进行类型转换，比如
@@ -28,14 +48,14 @@
      a === b;// true    a 和 b 都指向同一个地址
    ```
 
-4. 同上引申的一个问题，怎么比较两个数字数组A和B是否相同
+5. 同上引申的一个问题，怎么比较两个数字数组A和B是否相同
 
    ```js
    1，首先判断两者是否是数组 利用 Array.isArray(A) && Array.isArray(B)判断;
    2，再次检查 A.toString() === B.toString() 是否相等即可
    ```
 
-5. javascript 的 this 关键字
+6. javascript 的 this 关键字
 
    ```js
    1. 定义：this 是 Javascript语言的一个关键字。 它代表函数运行时,自动生成的一个内部对象,只能在函数内部使用. 
@@ -63,7 +83,7 @@
    4.apply 和 call 调用模式:函数内部this会被设置为传入的第一个参数
    ```
 
-6. 闭包
+7. 闭包
 
    ```js
    JS闭包的特征:
@@ -81,7 +101,7 @@
    2.引起内存泄露
    ```
 
-7. apply 和 call 的区别
+8. apply 和 call 的区别
 
    ```js
    所有函数都有两个方法：
@@ -92,7 +112,7 @@
        Function.prototype.call(context, 参数1，参数2，...) 参数不固定
    ```
 
-8. ajax请求（get请求 和 post请求的区别）
+9. ajax请求（get请求 和 post请求的区别）
 
    ```js
    1, get 参数 携带在url上，http 请求体body 数据为空，post 数据携带在http请求体body上
@@ -100,16 +120,31 @@
    3，post 比 get 更安全一点，但是也只是看上去安全，因为Http是明文传输
    ```
 
-9. 前端跨域问题
+10. 前端跨域问题
 
-   ```js
-   ￼1. jsonp 
-       原理：(jsonp的原理是动态插入script标签, 利用script的src 加载 绕过浏览器检查) 
-       缺点是：只能是get请求 
-   2. 服务器跨域资源共享（CORS）设置Http请求头，允许跨域
-   3. document.domain+iframe、window.name、window.postMessage等等
-   ```
+    ```js
+    ￼1. jsonp 
+        原理：(jsonp的原理是动态插入script标签, 利用script的src 加载 绕过浏览器检查) 
+        缺点是：只能是get请求 
+    2. 服务器跨域资源共享（CORS）设置Http请求头，允许跨域
+    3. document.domain+iframe、window.name、window.postMessage等等
+    ```
 
-10. 
+11. （备选加分）有没有用过ES6（JavaScript 的语言标准 改善了ES5的许多诟病）
+
+    ```
+    假如用过继续问：有没有用过比如 gulp、Webpack等前端构建工具
+    因为主流浏览器主要兼容ES5，很多浏览器不支持ES6，需要利用打包工具把ES6转化为ES5语言
+    ```
+
+12.  \(备选加分\) 有没有用过 Node.js
+
+    ```
+    Node.js 相当于Java语言的JVM，跨平台、即在服务器上运行JavaScript代码
+    基于Node.js一般的项目：后端框架是 Express 或者 Koa
+    数据库：非关系型数据库Mongodb 和 关系型数据库 Mysql
+    这些后端共同的知识点可以在这里延伸下。
+    ```
+
 
 
