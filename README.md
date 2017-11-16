@@ -3,7 +3,7 @@
 1. [CSS](/chapter1.md)
 2. [HTML](/html.md)
 3. [JavaScript](/javascript.md)
-4. [安全](/安全)
+4. [安全](/4an-quan.md)
 5. [HTTP协议](/http.md)
 6. [框架](/5kuang-jia.md)
 
