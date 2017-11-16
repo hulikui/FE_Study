@@ -5,9 +5,9 @@
    2. IE  content 包括 padding + border
 
    ```css
-         box-sizing
-             content-box: width = content
-             border-box: content+padding+border = width
+     box-sizing
+       content-box: width = content
+       border-box: content+padding+border = width
    ```
 
    1. margin 塌陷

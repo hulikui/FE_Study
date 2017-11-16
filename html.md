@@ -9,7 +9,7 @@
     1. 便于人的理解，程序可阅读性强
     2. 利于SEO
 
-3，HTML5 本地存储的新特性*
+3，HTML5 本地存储的新特性
     有：localStorage、localStorage(前两者大约最大 5 M 大小) 和 indexDB（后者一般上限是500 M）
     localStorage 和 localStorage的区别
         localStorage 永久存储
@@ -27,7 +27,7 @@
         购物车
         用户登陆状态的维持等等
 
-5, 接着问 cookie 和 session 的区别
+5, 接着4问 cookie 和 session 的区别
 ```
 
 
