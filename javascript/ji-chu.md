@@ -100,12 +100,13 @@
    1.因为闭包会携带包含它的函数的作用域,因此会比其他函数占用更多的内存
    2.引起内存泄露
    程序题：
-   for(var i = 0; i <= 9; i++) {
-      setTimeout(function() {
-         console.log(i);
-      }, 0);
-   }
-   // 输出是 10 个 10, 因为 i 累计到10后，for循环结束，但是当执行setTimeout里的回调函数时，输出的是当前的i(保持在内存里)， 这时候已经是 10 了
+      for(var i = 0; i <= 9; i++) {
+         setTimeout(function() {
+            console.log(i);
+         }, 0);
+      }
+      // 输出是 10 个 10, 因为 i 累计到10后，for循环结束，但是当执行setTimeout里的回调函数时，输出的是当前的i(保持在内存里)， 这时候已经是 10 了
+   
    ```
 
 8. apply 和 call 的区别
