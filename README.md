@@ -6,6 +6,8 @@
 4. [安全](/4an-quan.md)
 5. [HTTP协议](/http.md)
 6. [框架](/5kuang-jia.md)
+7. [算法](/suan-fa.md)
+8. [缓存](/huan-cun.md)
 
 ```js
 前端主要考察知识点的广度和JavaScrpt语言的深度
