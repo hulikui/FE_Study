@@ -21,11 +21,13 @@
    ```
 
 2. JavaScript 基本数据和引用类型
+
    ```js
    1. js基本数据类型:
    Number、String 、Boolean、Null和 undefined
    2. 基本引用类型: Object 、Array 、Function 、Date和（ES6的RegExp(正则)）
    ```
+
 3. null  和 undifined 的区别
 
    ```js

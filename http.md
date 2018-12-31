@@ -17,7 +17,9 @@
    对于我们Web开发人员来说掌握HTTP应答码有助于提高Web应用程序调试的效率和准确性。
    ```
 
-3. （备选 加分）高级进阶知识点 HTTP缓存 知识点
+3. （备选 加分）高级进阶知识点 HTTP缓存 知识点（查看缓存）
+
+4. TCP/IP协议以及三次握手等等[ https://www.jianshu.com/p/43a25804b2e8](https://www.jianshu.com/p/43a25804b2e8)
 
 
 

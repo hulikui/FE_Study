@@ -1,5 +1,20 @@
 Promise
 
+简易版本
+
+```js
+function Promise(callback) {
+    this.cb = null;
+    this.then = (cb) => {
+        this.cb = cb;
+    }
+    this.resolve = (data) => {
+        this.cb(data);
+    }
+    callback(this.resolve);
+}
+```
+
 ```js
 var PENDING = 0;
 var FULFILLED = 1;

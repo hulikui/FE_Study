@@ -18,4 +18,6 @@
 * [HTTP](http.md)
 * [框架](5kuang-jia.md)
   * [React](5kuang-jia/react.md)
+* [算法](suan-fa.md)
+* [缓存](huan-cun.md)
 
