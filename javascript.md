@@ -1,7 +1,5 @@
 [**JavaScript（基础部分）**](/javascript/ji-chu.md)
 
-
-
 基本函数构造（进阶）
 
 1. [封装 ajax 请求](/javascript/ajax.md)
@@ -18,6 +16,14 @@
 12. [轮播的实现](/javascript/lun-bo-tu.md)
 13. 链式调用
 14. 计算某网页内的标签个数
+
+前端路由的两种实现方式：[https://segmentfault.com/a/1190000007238999](https://segmentfault.com/a/1190000007238999)
+
+```
+1、history API history.pushState 和 history.replaceState
+fun(state, title, url) 
+2、window.location # hash 不重新渲染页面 onhashchange 监听
+```
 
 3.3 设计模式
 
