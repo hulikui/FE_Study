@@ -42,5 +42,20 @@ HTML渲染
 5, 接着4问 cookie 和 session 的区别
 ```
 
+window.onload 以及 $\(document\).ready\(\)
+
+```
+window.onload 所有资源都已经加载后，最后执行
+$(document).ready() DOMTree 加载完毕即可，DOMContentLoaded
+```
+
+script 标签 async 以及 defer
+
+```
+仅有async属性，脚本会异步执行
+仅有defer属性，脚本会在文档解析完毕后执行
+两个属性都没有，脚本会被同步下载并执行，期间会柱塞文档解析
+```
+
 
 
