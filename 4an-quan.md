@@ -10,6 +10,13 @@
    ```js
    原因：1. 浏览器可以拼接任何JavaScript语句
         2. 没有过滤或转义掉非法字符
+        jQuery.escapeHtml=function(s){
+   	return (s)? jQuery("<p>").text(s).html(): "";}
+	
+   escapeHTML: function(a){  
+       a = "" + a;  
+       return a.replace(/&/g, "&").replace(/</g, "<").replace(/>/g, ">").replace(/"/g, """).replace(/'/g, "'");;  
+   },
    ```
 
 3. CSRF 跨站请求伪造

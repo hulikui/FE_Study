@@ -15,11 +15,28 @@
    5XX-服务器错误(Server Error), 表示服务器不能完成对请求的处理：如 500
 
    对于我们Web开发人员来说掌握HTTP应答码有助于提高Web应用程序调试的效率和准确性。
+   301 和 302 
+   301 永久重定向，有利于SEO
+   302 临时重定向
    ```
 
 3. （备选 加分）高级进阶知识点 HTTP缓存 知识点（查看缓存）
 
 4. TCP/IP协议以及三次握手等等[ https://www.jianshu.com/p/43a25804b2e8](https://www.jianshu.com/p/43a25804b2e8)
 
+5. Http一些重要字段
+
+   ```
+   Host 任何情况下，请求都会包含此信息 —— 应用 代理服务器
+   客户端标记的我要访问的web服务器的 域名、IP和端口
+   Origin
+   请求来源，仅仅包括协议和域名，CORS Access-Control-Allow-Origin
+   CRSF 验证
+   Referer
+   发起请求前把window.location.href赋值到referer 向服务器请求的原始资源URI，包括 协议+域名+参数
+   用处就是 防盗链
+   ```
+
+6. 
 
 

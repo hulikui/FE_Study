@@ -28,8 +28,7 @@
    1. diff算法  
       ![](https://segmentfault.com/img/bVuH57)  
    2. redux  
-      1. ![](https://github.com/bailicangdu/pxq/raw/master/src/images/all_redux.png)  
-         2.
+      1. 
 
 
 
